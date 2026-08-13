@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch",
+      "WebSearch"
+    ]
+  },
+  "model": "opus[1m]",
+  "tui": "fullscreen",
+  "theme": "dark-daltonized",
+  "voice": {
+    "enabled": false,
+    "mode": "hold"
+  },
+  "voiceEnabled": false,
+  "skipWorkflowUsageWarning": true
+}

@@ -1,0 +1,46 @@
+# Project-specific skills that name an employer's products, internal repos, or
+# reverse-engineered vendor formats. install.sh layers them on top of skills/
+# so your machine gets them; this repo never does.
+skills-local/
+
+# Never commit credentials or auth state
+.credentials.json
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+
+# Machine-specific settings — each machine builds its own
+settings.local.json
+
+# Claude Code runtime state (belongs in ~/.claude, never in the repo)
+projects/
+sessions/
+session-env/
+tasks/
+plans/
+handoffs/
+pipeline-runs/
+agent-memory/
+memory/
+history.jsonl
+shell-snapshots/
+file-history/
+paste-cache/
+downloads/
+cache/
+debug/
+backups/
+*.backup-*/
+stats-cache.json
+policy-limits.json
+remote-settings.json
+ide/
+plugins/
+
+# Editor / OS noise
+.DS_Store
+*.swp
+__pycache__/
+*.pyc
